@@ -20,6 +20,20 @@ where $N$ is the number of tasks.
 
 At the end of every day, before another request is made, the expected hours are updated by subtracting the hours spent on the task from the expected hours.
 
+## Demo
+
+Add a task, or edit an existing one by entering the same project name:
+
+<img src="assets/add.png" alt="Add/Edit Task" width="600"/>
+
+Get your weighted hours allocation for today:
+
+<img src="assets/today.png" alt="Today's Tasks" width="600"/>
+
+View all tasks:
+
+<img src="assets/myTasks.png" alt="All Tasks" width="600"/>
+
 ### What's next?
 
 Someone could clean this up into a legitimate app, there's a whole bunch of low-hanging fruit that might make this quite generally usable:
