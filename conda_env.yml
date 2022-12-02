@@ -1,0 +1,11 @@
+# conda env from yml
+
+name: ianizer
+
+dependencies:
+  - python=3.8
+  - pandas
+  - flask
+  - flask-wtf
+  - flask-cors
+  - wtforms
