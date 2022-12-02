@@ -12,7 +12,7 @@ This is a simple daily task manager app. It allows you to add or edit tasks alon
 
 Given a vector of due dates, say $\vec{d}$, and a corresponding vector of expected hours, say $\vec{h}$, the algorithm computes today's hour allocation, $\vec{\mathcal{h}}$ as follows:
 
-$$\mathcal{h}_i = \frac{\frac{h_i}{d_i}}{\sum_{j=1}^N \frac{h_j}{d_j}}$$
+$$\mathcal{h}_i = \frac{\frac{h_i}{d_i}}{\sum_{j=1}^N (h_j / d_j)}$$
 
 where $N$ is the number of tasks.
 
