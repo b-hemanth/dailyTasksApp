@@ -1,4 +1,4 @@
-# IANizer: A simple daily task manager app
+# IANizer: A simple daily task manager joke-app
 
 ## Lore
 
