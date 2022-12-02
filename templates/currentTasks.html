@@ -1,0 +1,28 @@
+{% extends 'extend.html' %}
+
+
+{% block content %}
+    <h1>My Tasks</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Project Type</th>
+                <th>Task Type</th>
+                <th>Expected Hours</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in tasks.iterrows() %}
+                <tr>
+                    <td>{{ row.projectName }}</td>
+                    <td>{{ row.projectType }}</td>
+                    <td>{{ row.taskType }}</td>
+                    <td>{{ row.expectedHours }}</td>
+                    <td>{{ row.dueDate }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

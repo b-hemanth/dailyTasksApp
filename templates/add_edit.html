@@ -1,0 +1,28 @@
+{% extends "extend.html" %} {% block content %}
+
+    <h1>Add/Edit Tasks</h1>
+    <form action="/submit" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.projectName.label }}<br>
+            {{ form.projectName(size=32) }}
+        </p>
+        <p>
+            {{ form.projectType.label }}<br>
+            {{ form.projectType(size=32) }}
+        </p>
+        <p>
+            {{ form.taskType.label }}<br>
+            {{ form.taskType(size=32) }}
+        </p>
+        <p>
+            {{ form.expectedHours.label }}<br>
+            {{ form.expectedHours(size=5) }}
+        </p>
+        <p>
+            {{ form.dueDate.label }}<br>
+            {{ form.dueDate(size=20, type="date") }}
+        </p>
+        <p>{{ form.submit(class="btn btn-success") }}</p>
+    </form>
+{% endblock %}

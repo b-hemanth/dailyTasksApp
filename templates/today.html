@@ -1,0 +1,37 @@
+{% extends 'extend.html' %}
+
+
+{% block content %}
+
+    <h1>>>BEEP>>BORP>>BOOP>> The IANizer St. Nikolass Engine has decided how you spend your three (3) hours today!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Project Type</th>
+                <th>Task Type</th>
+                <th>Hours Allocated</th>
+                <th>Minutes Allocated</th>
+                <th>Weight</th>
+                <th>Due Date</th>
+                <th>Expected Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, task in today.iterrows() %}
+                {% if task.hoursAllocated > 0 %}
+                    <tr>
+                        <td>{{ task.projectName }}</td>
+                        <td>{{ task.projectType }}</td>
+                        <td>{{ task.taskType }}</td>
+                        <td>{{ task.hoursAllocated }}</td>
+                        <td>{{ task.minutesAllocated }}</td>
+                        <td>{{ task.weight }}</td>
+                        <td>{{ task.dueDate }}</td>
+                        <td>{{ task.expectedHours }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

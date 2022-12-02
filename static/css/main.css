@@ -1,0 +1,38 @@
+table {
+    /* pretty, minimal border */
+    border: 1px solid #ccc;
+    margin: 3em 0;
+    /* force the table to be in the center of the page */
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    border: 1px dotted rgb(253, 253, 253);
+    padding: 5px;
+    text-align: left;
+    font-family: "Cambria", "Times New Roman", serif;
+    /* font color white */
+    color: rgb(253, 253, 253);
+    /* bold font */
+    font-weight: bold;
+}
+th {
+    background-color: rgb(119, 35, 2);
+}
+tr:nth-child(odd) td {
+    background-color: #034f64;
+    font-family: 'Courier New', Courier, monospace;
+    /* font color eggshell */
+    color: #f0f0f0;
+    /* add spacious margins */
+    margin: 0 10px;
+}
+tr:nth-child(even) td {
+    background-color: #07113a;
+    font-family: 'Courier New', Courier, monospace;
+    /* font color eggshell */
+    color: #f0f0f0;
+    /* add spacious margins */
+    margin: 0 10px;
+}
+
