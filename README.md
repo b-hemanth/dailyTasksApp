@@ -10,7 +10,7 @@
 
 This is a simple daily task manager app. It allows you to add or edit tasks along with metadata, expected hours to complete, and due date. Then, it prepares your daily schedule for the maximum hours you want (currently hard-coded to 3 hours), and displays the tasks in order of due-date.
 
-Given a vector of due dates, say $\vec{d}$, and a corresponding vector of expected hours, say $\vec{h}$, the algorithm computes today's hour allocation, $\vec{\mathcal{H}}$ as $\mathcal{H}_i = \left(\frac{h_i}{d_i}\right) / \left( \sum_{i = 1}^{N} \frac{h_j}{d_j}\right)$ where $N$ is the number of tasks.
+Given a vector of due dates, say $\vec{d}$, and a corresponding vector of expected hours, say $\vec{h}$, the algorithm computes today's hour allocation, $\vec{\mathcal{H}}$ as $$\mathcal{H}_i = \left(\frac{h_i}{d_i}\right) / \left( \sum_{i = 1}^{N} \frac{h_j}{d_j}\right)$$ where $N$ is the number of tasks.
 
 At the end of every day, before another request is made, the expected hours are updated by subtracting the hours spent on the task from the expected hours.
 
